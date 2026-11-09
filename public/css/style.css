@@ -1,0 +1,123 @@
+:root {
+    --primary: #4f46e5;
+    --primary-dark: #4338ca;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #f1f5f9;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%) !important;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, .25);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: -.3px;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: .925rem;
+    padding: .5rem .85rem !important;
+    border-radius: 8px;
+    transition: background .2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: rgba(255, 255, 255, .15);
+}
+
+.content-area {
+    padding: 1.75rem 0 2.5rem;
+}
+
+.page-title {
+    font-weight: 700;
+    letter-spacing: -.4px;
+    color: #0f172a;
+}
+
+.stat-card {
+    border: none;
+    border-radius: 14px;
+    transition: transform .2s, box-shadow .2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, .08) !important;
+}
+
+.stat-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.card {
+    border: none;
+    border-radius: 14px;
+}
+
+.card-header {
+    background: #fff;
+    border-bottom: 1px solid #e2e8f0;
+    font-weight: 600;
+}
+
+.table thead th {
+    background-color: #f8fafc;
+    font-weight: 600;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    color: #64748b;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.table td {
+    vertical-align: middle;
+    font-size: .925rem;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.badge {
+    font-weight: 500;
+    font-size: .75rem;
+    padding: .35em .65em;
+}
+
+footer {
+    background: #fff;
+    border-top: 1px solid #e2e8f0;
+    padding: 1rem 0;
+}

@@ -1,0 +1,132 @@
+/* @import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+} */
+
+
+:root {
+    --primary: #4f46e5;
+    --primary-dark: #4338ca;
+}
+
+body {
+    font-family: "Inter", system-ui, sans-serif;
+    background-color: #f1f5f9;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%) !important;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.25);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 0.925rem;
+    padding: 0.5rem 0.85rem !important;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.content-area {
+    padding: 1.75rem 0 2.5rem;
+}
+
+.page-title {
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    color: #0f172a;
+}
+
+.card {
+    border: none;
+    border-radius: 14px;
+}
+
+.card-header {
+    background: #fff;
+    border-bottom: 1px solid #e2e8f0;
+    font-weight: 600;
+}
+
+.table thead th {
+    background-color: #f8fafc;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #64748b;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.table td {
+    vertical-align: middle;
+    font-size: 0.925rem;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.badge {
+    font-weight: 500;
+    font-size: 0.75rem;
+    padding: 0.35em 0.65em;
+}
+
+footer {
+    background: #fff;
+    border-top: 1px solid #e2e8f0;
+    padding: 1rem 0;
+}
+
+.form-label {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #334155;
+}
+
+.form-control,
+.form-select {
+    border-radius: 10px;
+    border-color: #e2e8f0;
+    padding: 0.6rem 0.9rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
